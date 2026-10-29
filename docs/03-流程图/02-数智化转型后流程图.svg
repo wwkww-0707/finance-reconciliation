@@ -1,0 +1,213 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 830" width="1280" height="830" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, sans-serif">
+  <defs>
+    <style>
+      .t1{font-size:26px;font-weight:700;fill:#16233a;letter-spacing:1px}
+      .t2{font-size:13px;fill:#6b7a90}
+      .ph{font-size:13.5px;font-weight:700;fill:#fff}
+      .phsub{font-size:10px;fill:#dbe7f7}
+      .bx-s{fill:#eef4ff;stroke:#b6cdf7;stroke-width:1.2}
+      .bx-t{fill:#eafaf7;stroke:#96d3c8;stroke-width:1.2}
+      .bx-h{fill:#fff7ed;stroke:#f0c98a;stroke-width:1.2}
+      .code{font-size:9.5px;font-weight:700;letter-spacing:.5px}
+      .bn{font-size:12.5px;font-weight:700;fill:#1b2c46}
+      .bd{font-size:9.8px;fill:#5d6d84}
+      .pill{font-size:9px;font-weight:700}
+      .ptitle{font-size:13.5px;font-weight:700;fill:#16233a}
+      .ptxt{font-size:11px;fill:#42536b}
+      .foot{font-size:10.5px;fill:#93a1b3}
+      .arrow{stroke:#8fa3bd;stroke-width:1.6;fill:none;marker-end:url(#ah)}
+    </style>
+    <marker id="ah" markerWidth="9" markerHeight="9" refX="7.5" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#8fa3bd"/></marker>
+    <marker id="ah2" markerWidth="8" markerHeight="8" refX="6" refY="2.5" orient="auto"><path d="M0,0 L7,2.5 L0,5 z" fill="#b42318"/></marker>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fbfcfe"/><stop offset="1" stop-color="#f4f7fb"/></linearGradient>
+  </defs>
+
+  <rect width="1280" height="830" fill="url(#bg2)"/>
+  <rect x="0" y="0" width="1280" height="4" fill="#1a3a6b"/>
+
+  <text x="30" y="44" class="t1">数智化转型后流程图 · 差异定位辅助</text>
+  <text x="30" y="68" class="t2">系统只做「归集 → 校验 → 匹配 → 定位」，人做「判定 → 处置 → 复核」；中间是不可跨越的自动化边界</text>
+
+  <g transform="translate(884,26)">
+    <rect x="0" y="0" width="14" height="12" rx="3" fill="#eef4ff" stroke="#b6cdf7"/><text x="20" y="10" class="ptxt" font-size="10.5">系统自动</text>
+    <rect x="94" y="0" width="14" height="12" rx="3" fill="#eafaf7" stroke="#96d3c8"/><text x="114" y="10" class="ptxt" font-size="10.5">只读建议</text>
+    <rect x="196" y="0" width="14" height="12" rx="3" fill="#fff7ed" stroke="#f0c98a"/><text x="216" y="10" class="ptxt" font-size="10.5">人工决策</text>
+    <line x1="296" y1="0" x2="296" y2="12" stroke="#b42318" stroke-width="1.4" stroke-dasharray="3 2"/><text x="304" y="10" class="ptxt" font-size="10.5">自动化边界</text>
+  </g>
+
+  <!-- ===== 阶段表头 ===== -->
+  <rect x="30" y="94" width="220" height="48" rx="6" fill="#1f4b8f"/>
+  <rect x="280" y="94" width="220" height="48" rx="6" fill="#1f4b8f"/>
+  <rect x="530" y="94" width="220" height="48" rx="6" fill="#12736a"/>
+  <rect x="780" y="94" width="220" height="48" rx="6" fill="#a2540c"/>
+  <rect x="1030" y="94" width="220" height="48" rx="6" fill="#a2540c"/>
+  <text x="44" y="114" class="ph">A · 归集与质控</text><text x="44" y="131" class="phsub">资料进得来、洗得干净</text>
+  <text x="294" y="114" class="ph">B · 分层匹配</text><text x="294" y="131" class="phsub">由严到宽，逐层降置信</text>
+  <text x="544" y="114" class="ph">C · 差异定位</text><text x="544" y="131" class="phsub">只给原因与证据，不处置</text>
+  <text x="794" y="114" class="ph">D · 人工兜底</text><text x="794" y="131" class="phsub">四类情形强制转人工</text>
+  <text x="1044" y="114" class="ph">E · 复核与留痕</text><text x="1044" y="131" class="phsub">签核、审计、口径固化</text>
+
+  <!-- 自动化边界 -->
+  <line x1="765" y1="86" x2="765" y2="516" stroke="#b42318" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <rect x="672" y="492" width="186" height="19" rx="9.5" fill="#fdecea" stroke="#f0b3ac" stroke-width="1"/>
+  <text x="765" y="505" text-anchor="middle" font-size="10" font-weight="700" fill="#b42318">自动化边界（f05 / f40）</text>
+
+  <!-- ===== A 列 ===== -->
+  <rect class="bx-s" x="30" y="166" width="220" height="90" rx="7"/>
+  <text x="44" y="184" class="code" fill="#1f4b8f">A1</text>
+  <text x="44" y="204" class="bn">四类材料只读快照</text>
+  <text x="44" y="224" class="bd">渠道结算 / 内部流水 / 退款事件 / 费率</text>
+  <text x="44" y="240" class="bd">带版本号与快照时间，过期标“待刷新”</text>
+
+  <rect class="bx-s" x="30" y="276" width="220" height="90" rx="7"/>
+  <text x="44" y="294" class="code" fill="#1f4b8f">A2</text>
+  <text x="44" y="314" class="bn">字段级校验（Q1–Q7）</text>
+  <text x="44" y="334" class="bd">主编号 · 时区 · 事件时间 · 金额净额</text>
+  <text x="44" y="350" class="bd">规则版本 · 主键唯一性 · 快照时效</text>
+
+  <rect class="bx-s" x="30" y="386" width="220" height="90" rx="7"/>
+  <text x="44" y="404" class="code" fill="#1f4b8f">A3</text>
+  <text x="44" y="424" class="bn">歧义记录 → 修复队列</text>
+  <text x="44" y="444" class="bd">修复后重新入队，不进自动匹配样本</text>
+  <text x="44" y="460" class="bd">分母与排除项同步披露</text>
+
+  <!-- ===== B 列 ===== -->
+  <rect class="bx-s" x="280" y="166" width="220" height="90" rx="7"/>
+  <text x="294" y="184" class="code" fill="#1f4b8f">B1</text>
+  <text x="294" y="204" class="bn">五层匹配（由严到宽）</text>
+  <text x="294" y="224" class="bd">主键 → 渠道单号 → 金额+时间窗</text>
+  <text x="294" y="240" class="bd">→ 合并拆分 → 退款事件反查</text>
+
+  <rect class="bx-s" x="280" y="276" width="220" height="90" rx="7"/>
+  <text x="294" y="294" class="code" fill="#1f4b8f">B2</text>
+  <text x="294" y="314" class="bn">合并入账拆分</text>
+  <text x="294" y="334" class="bd">按商户 + 结算日取组，金额与手续费</text>
+  <text x="294" y="350" class="bd">双校验通过才拆，不穷举凑数</text>
+
+  <rect class="bx-s" x="280" y="386" width="220" height="90" rx="7"/>
+  <text x="294" y="404" class="code" fill="#1f4b8f">B3</text>
+  <text x="294" y="424" class="bn">低置信不结论</text>
+  <text x="294" y="444" class="bd">同额多候选 → 转人工 D10</text>
+  <text x="294" y="460" class="bd">宁可少匹配，不可错匹配（f40）</text>
+
+  <!-- ===== C 列 ===== -->
+  <rect class="bx-t" x="530" y="166" width="220" height="90" rx="7"/>
+  <text x="544" y="184" class="code" fill="#12736a">C1</text>
+  <text x="544" y="204" class="bn">10 类原因码（D01–D10）</text>
+  <text x="544" y="224" class="bd">有限枚举，不允许自由文本兜底</text>
+  <text x="544" y="240" class="bd">跨日退款 / 合并入账 / 重复单…</text>
+
+  <rect class="bx-t" x="530" y="276" width="220" height="90" rx="7"/>
+  <text x="544" y="294" class="code" fill="#12736a">C2</text>
+  <text x="544" y="314" class="bn">证据引用 + 规则版本</text>
+  <text x="544" y="334" class="bd">可回指原记录与待确认字段（f15）</text>
+  <text x="544" y="350" class="bd">不出现“匹配上了但说不清为什么”</text>
+
+  <rect class="bx-t" x="530" y="386" width="220" height="90" rx="7"/>
+  <text x="544" y="404" class="code" fill="#12736a">C3</text>
+  <text x="544" y="424" class="bn">可查原因完整性校验</text>
+  <text x="544" y="444" class="bd">7 项必填字段齐全才算“可查”</text>
+  <text x="544" y="460" class="bd">缺任一 → 计入未解释差异</text>
+
+  <!-- ===== D 列 ===== -->
+  <rect class="bx-h" x="780" y="166" width="220" height="90" rx="7"/>
+  <text x="794" y="184" class="code" fill="#a2540c">D1</text>
+  <text x="794" y="204" class="bn">四类情形触发转人工</text>
+  <text x="794" y="224" class="bd">重复单 / 缺依据 / 版本冲突</text>
+  <text x="794" y="240" class="bd">/ 关键系统不可用（f44）</text>
+
+  <rect class="bx-h" x="780" y="276" width="220" height="90" rx="7"/>
+  <text x="794" y="294" class="code" fill="#a2540c">D2</text>
+  <text x="794" y="314" class="bn">工单分派 + SLA</text>
+  <text x="794" y="334" class="bd">岗位池分派，标注触发原因</text>
+  <text x="794" y="350" class="bd">超时升级至支付运营经理（f25）</text>
+
+  <rect class="bx-h" x="780" y="386" width="220" height="90" rx="7"/>
+  <text x="794" y="404" class="code" fill="#a2540c">D3</text>
+  <text x="794" y="424" class="bn">确认接手才闭环</text>
+  <text x="794" y="444" class="bd">接手人与确认时间必填（f23）</text>
+  <text x="794" y="460" class="bd">只发消息不算完成</text>
+
+  <!-- ===== E 列 ===== -->
+  <rect class="bx-h" x="1030" y="166" width="220" height="90" rx="7"/>
+  <text x="1044" y="184" class="code" fill="#a2540c">E1</text>
+  <text x="1044" y="204" class="bn">双人复核</text>
+  <text x="1044" y="224" class="bd">涉及资金动作强制双人（f40）</text>
+  <text x="1044" y="240" class="bd">系统留痕，不可跳过</text>
+
+  <rect class="bx-h" x="1030" y="276" width="220" height="90" rx="7"/>
+  <text x="1044" y="294" class="code" fill="#a2540c">E2</text>
+  <text x="1044" y="314" class="bn">哈希链审计</text>
+  <text x="1044" y="334" class="bd">业务编号+版本+事实引用+签核人</text>
+  <text x="1044" y="350" class="bd">可重建归集到复核全链路（f45）</text>
+
+  <rect class="bx-h" x="1030" y="386" width="220" height="90" rx="7"/>
+  <text x="1044" y="404" class="code" fill="#a2540c">E3</text>
+  <text x="1044" y="424" class="bn">指标与口径快照</text>
+  <text x="1044" y="444" class="bd">双口径：验收 / 全量，分母写死</text>
+  <text x="1044" y="460" class="bd">排除项与指标同时披露（f53）</text>
+
+  <!-- ===== 连接 ===== -->
+  <path class="arrow" d="M140,256 L140,272"/>
+  <path class="arrow" d="M140,366 L140,382"/>
+  <path class="arrow" d="M250,431 L266,431 L266,211 L276,211"/>
+  <path class="arrow" d="M390,256 L390,272"/>
+  <path class="arrow" d="M390,366 L390,382"/>
+  <path class="arrow" d="M500,431 L516,431 L516,211 L526,211"/>
+  <path class="arrow" d="M640,256 L640,272"/>
+  <path class="arrow" d="M640,366 L640,382"/>
+  <path d="M750,431 L768,431" stroke="#b42318" stroke-width="1.8" fill="none" marker-end="url(#ah2)"/>
+  <path class="arrow" d="M890,256 L890,272"/>
+  <path class="arrow" d="M890,366 L890,382"/>
+  <path class="arrow" d="M1000,431 L1016,431 L1016,211 L1026,211"/>
+  <path class="arrow" d="M1140,256 L1140,272"/>
+  <path class="arrow" d="M1140,366 L1140,382"/>
+
+  <!-- ===== 改造要点 ===== -->
+  <text x="30" y="540" class="ptitle">四个改造要点（对应最小可验证方案的范围）</text>
+  <g>
+    <rect x="30" y="554" width="290" height="72" rx="7" fill="#fff" stroke="#dbe4ef"/>
+    <text x="44" y="576" class="bn" font-size="12">① 质控前置</text>
+    <text x="44" y="596" class="bd" font-size="10.2">脏数据不进匹配分母，先修再匹配</text>
+    <text x="44" y="612" class="bd" font-size="10.2">避免“算法背锅数据问题”</text>
+
+    <rect x="336" y="554" width="290" height="72" rx="7" fill="#fff" stroke="#dbe4ef"/>
+    <text x="350" y="576" class="bn" font-size="12">② 只读建议</text>
+    <text x="350" y="596" class="bd" font-size="10.2">不退款、不调账、不发起资金划转</text>
+    <text x="350" y="612" class="bd" font-size="10.2">建议可以给，动作必须人做</text>
+
+    <rect x="642" y="554" width="290" height="72" rx="7" fill="#fff" stroke="#dbe4ef"/>
+    <text x="656" y="576" class="bn" font-size="12">③ 四类兜底</text>
+    <text x="656" y="596" class="bd" font-size="10.2">触发即转人工，标注原因/接手人/时间</text>
+    <text x="656" y="612" class="bd" font-size="10.2">不允许“模糊提醒”式转交</text>
+
+    <rect x="948" y="554" width="302" height="72" rx="7" fill="#fff" stroke="#dbe4ef"/>
+    <text x="962" y="576" class="bn" font-size="12">④ 可重建审计</text>
+    <text x="962" y="596" class="bd" font-size="10.2">业务编号 + 资料版本 + 事实引用</text>
+    <text x="962" y="612" class="bd" font-size="10.2">+ 建议结果 + 人工改动 + 签核人</text>
+  </g>
+
+  <!-- ===== 目标指标 ===== -->
+  <text x="30" y="664" class="ptitle">转型目标（访谈口径，须在真实回放中复测）</text>
+  <g>
+    <rect x="30" y="678" width="290" height="66" rx="7" fill="#f7f9fc" stroke="#dbe4ef"/>
+    <text x="46" y="702" font-size="18" font-weight="700" fill="#1b2c46">180 → 40 笔/日</text>
+    <text x="46" y="724" class="bd" font-size="10.2">未解释差异（结果指标，f00）</text>
+
+    <rect x="336" y="678" width="290" height="66" rx="7" fill="#f7f9fc" stroke="#dbe4ef"/>
+    <text x="352" y="702" font-size="18" font-weight="700" fill="#1b2c46">6 小时 → 1 小时</text>
+    <text x="352" y="724" class="bd" font-size="10.2">发现到定位（效率指标，f00）</text>
+
+    <rect x="642" y="678" width="290" height="66" rx="7" fill="#f7f9fc" stroke="#dbe4ef"/>
+    <text x="658" y="702" font-size="18" font-weight="700" fill="#1b2c46">≥ 99.9%</text>
+    <text x="658" y="724" class="bd" font-size="10.2">匹配准确率（分母口径须固定，f42/f53）</text>
+
+    <rect x="948" y="678" width="302" height="66" rx="7" fill="#f7f9fc" stroke="#dbe4ef"/>
+    <text x="964" y="702" font-size="18" font-weight="700" fill="#1b2c46">100% / 未解释 0</text>
+    <text x="964" y="724" class="bd" font-size="10.2">可查原因覆盖率（解释指标，f42）</text>
+  </g>
+
+  <line x1="30" y1="764" x2="1250" y2="764" stroke="#dbe4ef" stroke-width="1"/>
+  <text x="30" y="786" class="foot">停止条件：出现“匹配上了但说不清原因”、资金调整未经双人复核、转人工缺触发原因/接手人/确认时间、或通过调整排除规则抬高准确率 —— 任一触发即暂停试点复盘。</text>
+  <text x="30" y="806" class="foot">对照：01-现状流程图.svg｜实现：docs/05-mvp（13 项单元测试，含只读边界校验）｜依据：业务需求发现报告 f00–f55</text>
+</svg>

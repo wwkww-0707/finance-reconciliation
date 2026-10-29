@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 830" width="1280" height="830" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, sans-serif">
+  <defs>
+    <style>
+      .t1{font-size:26px;font-weight:700;fill:#16233a;letter-spacing:1px}
+      .t2{font-size:13px;fill:#6b7a90}
+      .ph{font-size:14px;font-weight:700;fill:#fff}
+      .phsub{font-size:10.5px;fill:#dce6f5}
+      .bn{font-size:13px;font-weight:700;fill:#1b2c46}
+      .bd{font-size:11.5px;fill:#3c4d66}
+      .bs{font-size:10.5px;fill:#7b8a9e}
+      .ptitle{font-size:13.5px;font-weight:700;fill:#16233a}
+      .ptxt{font-size:11.5px;fill:#42536b}
+      .pnum{font-size:10px;font-weight:700;fill:#fff}
+      .foot{font-size:10.5px;fill:#93a1b3}
+      .box{fill:#ffffff;stroke:#c9d6e6;stroke-width:1.2}
+      .arrow{stroke:#8fa3bd;stroke-width:1.6;fill:none;marker-end:url(#ah)}
+      .phase{fill:#27456e}
+    </style>
+    <marker id="ah" markerWidth="9" markerHeight="9" refX="7.5" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 z" fill="#8fa3bd"/>
+    </marker>
+    <marker id="ah2" markerWidth="8" markerHeight="8" refX="6" refY="2.5" orient="auto">
+      <path d="M0,0 L7,2.5 L0,5 z" fill="#b42318"/>
+    </marker>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbfcfe"/><stop offset="1" stop-color="#f4f7fb"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="830" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1280" height="4" fill="#27456e"/>
+
+  <text x="40" y="46" class="t1">现状流程图 · 支付对账与差错追踪</text>
+  <text x="40" y="70" class="t2">六节点主流程拆到 13 个可操作步骤（f01 / f20）｜灰字为访谈口径耗时（尚未分节点实测）｜红点为重点失败环节</text>
+
+  <g transform="translate(900,30)">
+    <circle cx="7" cy="6" r="8" fill="#b42318"/><text x="21" y="10" class="ptxt" font-size="11">失败环节</text>
+    <rect x="96" y="0" width="24" height="13" rx="3" class="box"/><text x="128" y="10" class="ptxt" font-size="11">处理步骤</text>
+    <rect x="212" y="0" width="24" height="13" rx="3" fill="#fff" stroke="#e3b4ae" stroke-width="1.6"/><text x="244" y="10" class="ptxt" font-size="11">不可逆断点</text>
+  </g>
+
+  <!-- ============ 阶段表头 ============ -->
+  <g class="phase">
+    <rect x="40" y="92" width="270" height="46" rx="7"/>
+    <rect x="350" y="92" width="270" height="46" rx="7"/>
+    <rect x="660" y="92" width="270" height="46" rx="7"/>
+    <rect x="970" y="92" width="270" height="46" rx="7"/>
+  </g>
+  <text x="58" y="112" class="ph">阶段一 · 取数与登记</text>
+  <text x="58" y="129" class="phsub">三个系统分别导出，口径未统一</text>
+  <text x="368" y="112" class="ph">阶段二 · 匹配与定位</text>
+  <text x="368" y="129" class="phsub">全流程最耗时，失败集中在这里</text>
+  <text x="678" y="112" class="ph">阶段三 · 差错处置</text>
+  <text x="678" y="129" class="phsub">跨岗交接，等待时间不可控</text>
+  <text x="988" y="112" class="ph">阶段四 · 复核与解释</text>
+  <text x="988" y="129" class="phsub">证据链不全则无法签核</text>
+
+  <!-- ============ 步骤 1-3 ============ -->
+  <rect class="box" x="40" y="166" width="270" height="78" rx="8"/>
+  <text x="54" y="192" class="bn">① 渠道结算文件下载</text>
+  <text x="54" y="212" class="bd">支付数据工程师 · 秦芮</text>
+  <text x="54" y="230" class="bs">约 60–120 分钟｜格式变更需重取</text>
+
+  <rect class="box" x="40" y="262" width="270" height="78" rx="8"/>
+  <text x="54" y="288" class="bn">② 内部流水导出</text>
+  <text x="54" y="308" class="bd">支付数据工程师 · 秦芮</text>
+  <text x="54" y="326" class="bs">约 60 分钟｜三系统权限独立</text>
+  <circle cx="296" cy="276" r="10" fill="#b42318"/><text x="291.5" y="280" class="pnum">1</text>
+
+  <rect class="box" x="40" y="358" width="270" height="78" rx="8"/>
+  <text x="54" y="384" class="bn">③ 资料版本登记</text>
+  <text x="54" y="404" class="bd">对账会计 · 唐映秋</text>
+  <text x="54" y="422" class="bs">约 15 分钟｜版本混杂无生效日</text>
+
+  <!-- ============ 步骤 4-6 ============ -->
+  <rect class="box" x="350" y="166" width="270" height="78" rx="8"/>
+  <text x="364" y="192" class="bn">④ 主编号关系核对</text>
+  <text x="364" y="212" class="bd">对账会计 · 唐映秋</text>
+  <text x="364" y="230" class="bs">约 40 分钟｜缺主编号只能翻单</text>
+  <circle cx="606" cy="180" r="10" fill="#b42318"/><text x="601.5" y="184" class="pnum">2</text>
+
+  <rect class="box" x="350" y="262" width="270" height="78" rx="8"/>
+  <text x="364" y="288" class="bn">⑤ 逐笔匹配</text>
+  <text x="364" y="308" class="bd">对账会计 · 唐映秋</text>
+  <text x="364" y="326" class="bs">约 150 分钟｜80 万笔逐笔比对</text>
+  <circle cx="606" cy="276" r="10" fill="#b42318"/><text x="601.5" y="280" class="pnum">3</text>
+
+  <rect class="box" x="350" y="358" width="270" height="78" rx="8"/>
+  <text x="364" y="384" class="bn">⑥ 差异初判</text>
+  <text x="364" y="404" class="bd">对账会计 · 唐映秋</text>
+  <text x="364" y="422" class="bs">约 90 分钟｜凭经验，结论不可追溯</text>
+  <circle cx="606" cy="372" r="10" fill="#b42318"/><text x="601.5" y="376" class="pnum">4</text>
+
+  <!-- ============ 步骤 7-10 ============ -->
+  <rect class="box" x="660" y="166" width="270" height="78" rx="8"/>
+  <text x="674" y="192" class="bn">⑦ 回渠道侧取原始回单</text>
+  <text x="674" y="212" class="bd">渠道运营员 · 林亦舟</text>
+  <text x="674" y="230" class="bs">等待 1–3 小时｜离场补录延误</text>
+
+  <rect class="box" x="660" y="262" width="270" height="78" rx="8"/>
+  <text x="674" y="288" class="bn">⑧ 差错登记与工单分派</text>
+  <text x="674" y="308" class="bd">对账会计 · 唐映秋</text>
+  <text x="674" y="326" class="bs">约 45 分钟｜常只写“已转交”</text>
+  <circle cx="916" cy="276" r="10" fill="#b42318"/><text x="911.5" y="280" class="pnum">5</text>
+
+  <rect class="box" x="660" y="358" width="270" height="78" rx="8"/>
+  <text x="674" y="384" class="bn">⑨ 跨岗确认接手</text>
+  <text x="674" y="404" class="bd">渠道运营员 / 商户服务主管</text>
+  <text x="674" y="422" class="bs">等待 30–120 分钟｜未确认则悬空</text>
+  <circle cx="916" cy="372" r="10" fill="#b42318"/><text x="911.5" y="376" class="pnum">6</text>
+
+  <rect class="box" x="660" y="454" width="270" height="78" rx="8" stroke="#e3b4ae" stroke-width="1.6"/>
+  <text x="674" y="480" class="bn">⑩ 人工调整（不可逆断点）</text>
+  <text x="674" y="500" class="bd">对账会计经办 · 资金风险经理复核</text>
+  <text x="674" y="518" class="bs">约 30 分钟/笔｜系统无强制双人留痕</text>
+  <circle cx="916" cy="468" r="10" fill="#b42318"/><text x="911.5" y="472" class="pnum">7</text>
+
+  <!-- ============ 步骤 11-13 ============ -->
+  <rect class="box" x="970" y="166" width="270" height="78" rx="8"/>
+  <text x="984" y="192" class="bn">⑪ 复核签核</text>
+  <text x="984" y="212" class="bd">资金风险经理 · 傅景</text>
+  <text x="984" y="230" class="bs">约 15 分钟｜证据链缺失则退回</text>
+
+  <rect class="box" x="970" y="262" width="270" height="78" rx="8"/>
+  <text x="984" y="288" class="bn">⑫ 对外解释与反馈</text>
+  <text x="984" y="308" class="bd">商户服务主管 · 叶书</text>
+  <text x="984" y="326" class="bs">约 20 分钟｜两侧统计日不同</text>
+  <circle cx="1226" cy="276" r="10" fill="#b42318"/><text x="1221.5" y="280" class="pnum">8</text>
+
+  <rect class="box" x="970" y="358" width="270" height="78" rx="8"/>
+  <text x="984" y="384" class="bn">⑬ 归档与留存</text>
+  <text x="984" y="404" class="bd">支付数据工程师 · 秦芮</text>
+  <text x="984" y="422" class="bs">约 10 分钟｜评价记录与凭证混存</text>
+
+  <!-- ============ 主干连接线 ============ -->
+  <path class="arrow" d="M175,244 L175,258"/>
+  <path class="arrow" d="M175,340 L175,354"/>
+  <path class="arrow" d="M310,397 L330,397 L330,205 L346,205"/>
+  <path class="arrow" d="M485,244 L485,258"/>
+  <path class="arrow" d="M485,340 L485,354"/>
+  <path class="arrow" d="M620,397 L640,397 L640,205 L656,205"/>
+  <path class="arrow" d="M795,244 L795,258"/>
+  <path class="arrow" d="M795,340 L795,354"/>
+  <path class="arrow" d="M795,436 L795,450"/>
+  <path class="arrow" d="M930,493 L950,493 L950,205 L966,205"/>
+  <path class="arrow" d="M1105,244 L1105,258"/>
+  <path class="arrow" d="M1105,340 L1105,354"/>
+
+  <!-- 复核不通过 → 退回差异定位 -->
+  <path d="M1240,205 L1264,205 L1264,558 L485,558 L485,442" stroke="#b42318" stroke-width="1.2" fill="none" stroke-dasharray="5 4" marker-end="url(#ah2)"/>
+  <rect x="694" y="530" width="342" height="20" fill="#f4f7fb"/>
+  <text x="700" y="545" font-size="10" fill="#b42318">复核不通过 → 退回原步骤，须保留退回原因（f20）</text>
+
+  <!-- ============ 痛点清单 ============ -->
+  <line x1="40" y1="576" x2="1240" y2="576" stroke="#dbe4ef" stroke-width="1"/>
+  <text x="40" y="604" class="ptitle">现状失败方式（访谈事实，占比未量化）</text>
+
+  <g class="ptxt">
+    <circle cx="48" cy="628" r="8" fill="#b42318"/><text x="44.5" y="632" class="pnum">1</text>
+    <text x="64" y="632">三类系统账号权限独立，业务状态没有统一视图，取数靠分别导出（f30）</text>
+    <circle cx="48" cy="660" r="8" fill="#b42318"/><text x="44.5" y="664" class="pnum">2</text>
+    <text x="64" y="664">交易号、商户订单号、渠道号关系不完整，时区不一致 → 匹配直接失败（f31）</text>
+    <circle cx="48" cy="692" r="8" fill="#b42318"/><text x="44.5" y="696" class="pnum">3</text>
+    <text x="64" y="696">跨日退款与手续费合并入账导致逐笔失败，每日 5 小时查异常（f10 / f12）</text>
+    <circle cx="48" cy="724" r="8" fill="#b42318"/><text x="44.5" y="728" class="pnum">4</text>
+    <text x="64" y="728">差异原因凭经验判断，说不清依据，复核时无法回指原记录（f15）</text>
+
+    <circle cx="668" cy="628" r="8" fill="#b42318"/><text x="664.5" y="632" class="pnum">5</text>
+    <text x="684" y="632">交接只写“已转交”，跨岗问题责任悬空，超时才升级（f25）</text>
+    <circle cx="668" cy="660" r="8" fill="#b42318"/><text x="664.5" y="664" class="pnum">6</text>
+    <text x="684" y="664">对方未确认接手就不算完成，等待时间无法压缩（f23）</text>
+    <circle cx="668" cy="692" r="8" fill="#b42318"/><text x="664.5" y="696" class="pnum">7</text>
+    <text x="684" y="696">资金调整要求双人复核，但系统无强制留痕，靠人工自觉（f40）</text>
+    <circle cx="668" cy="724" r="8" fill="#b42318"/><text x="664.5" y="728" class="pnum">8</text>
+    <text x="684" y="728">渠道按结算日、商户按支付日统计，同一笔对外解释口径打架（f50）</text>
+  </g>
+
+  <line x1="40" y1="758" x2="1240" y2="758" stroke="#dbe4ef" stroke-width="1"/>
+  <text x="40" y="782" class="foot">读图：四个阶段按时间顺序推进，跨阶段为长连线。第 ⑩ 步是全流程唯一影响资金的不可逆断点，其前必须有确定性校验与双人复核。</text>
+  <text x="40" y="802" class="foot">现状单日人工投入约 8 小时以上（对账员 5 小时查异常见 f12；发现到定位 6 小时见 f00，六节点分节点耗时尚未实测，f01）</text>
+</svg>

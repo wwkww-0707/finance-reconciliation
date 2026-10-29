@@ -1,0 +1,191 @@
+{
+  "meta": {
+    "project": "恒川支付运营 · 支付对账与差错追踪",
+    "channel": "CH-WEIXIN-A",
+    "settle_date": "2026-10-27",
+    "snapshot_version": 7,
+    "rule_version": "FEE-RULE-v1.2",
+    "sources": [
+      {
+        "source": "内部流水",
+        "rows": "1138",
+        "snapshot_time": "2026-10-27T23:59:00+08:00",
+        "lag_hours": "2",
+        "status": "正常"
+      },
+      {
+        "source": "渠道结算文件",
+        "rows": "1093",
+        "snapshot_time": "2026-10-27T23:55:00+08:00",
+        "lag_hours": "1",
+        "status": "正常"
+      },
+      {
+        "source": "退款事件",
+        "rows": "36",
+        "snapshot_time": "2026-10-27T01:30:00+08:00",
+        "lag_hours": "26",
+        "status": "待刷新"
+      },
+      {
+        "source": "手续费规则",
+        "rows": "2",
+        "snapshot_time": "2026-10-27T09:00:00+08:00",
+        "lag_hours": "15",
+        "status": "正常"
+      }
+    ],
+    "generated_at": "2026-10-29 19:56:46",
+    "quality_ms": 1.5
+  },
+  "summary": {
+    "ledger_rows": 1138,
+    "channel_rows": 1093,
+    "refund_rows": 36,
+    "sources": [
+      {
+        "source": "内部流水",
+        "rows": "1138",
+        "snapshot_time": "2026-10-27T23:59:00+08:00",
+        "lag_hours": "2",
+        "status": "正常"
+      },
+      {
+        "source": "渠道结算文件",
+        "rows": "1093",
+        "snapshot_time": "2026-10-27T23:55:00+08:00",
+        "lag_hours": "1",
+        "status": "正常"
+      },
+      {
+        "source": "退款事件",
+        "rows": "36",
+        "snapshot_time": "2026-10-27T01:30:00+08:00",
+        "lag_hours": "26",
+        "status": "待刷新"
+      },
+      {
+        "source": "手续费规则",
+        "rows": "2",
+        "snapshot_time": "2026-10-27T09:00:00+08:00",
+        "lag_hours": "15",
+        "status": "正常"
+      }
+    ]
+  },
+  "kpi": [
+    {
+      "key": "分母",
+      "label": "参与自动匹配",
+      "value": "1053 笔",
+      "hint": "全量 1093 笔 − 修复队列 33 − 低置信 7"
+    },
+    {
+      "key": "准确率A",
+      "label": "匹配准确率（验收口径）",
+      "value": "100.00%",
+      "hint": "1053 / 1053，目标 99.90%",
+      "flag": true
+    },
+    {
+      "key": "准确率B",
+      "label": "匹配准确率（全量口径）",
+      "value": "100.00%",
+      "hint": "转人工 40 笔计入未命中，用于风险复核"
+    },
+    {
+      "key": "覆盖率",
+      "label": "可查原因覆盖率",
+      "value": "100.0%",
+      "hint": "未解释差异 0 笔（目标 0）",
+      "flag": true
+    },
+    {
+      "key": "差异",
+      "label": "差异笔数",
+      "value": "168 笔",
+      "hint": "其中转人工 44 单"
+    },
+    {
+      "key": "自动率",
+      "label": "自动出结论率",
+      "value": "95.4%",
+      "hint": "含正常匹配 935 笔，不含需人工判定的差异"
+    }
+  ],
+  "by_code": {
+    "D03": 24,
+    "D10": 7,
+    "D06": 12,
+    "D02": 12,
+    "D07": 24,
+    "D01": 36,
+    "D08": 19,
+    "D09": 1,
+    "D04": 18,
+    "D05": 15
+  },
+  "spec": {
+    "统计周期": "单结算日（2026-10-27），离线回放",
+    "分母": "进入自动匹配的流水笔数 = 全量笔数 − 人工修复队列笔数 − 低置信转人工笔数",
+    "排除规则": "①主编号缺失或时区冲突（进修复队列）；②低置信候选（D10）；③快照过期数据（D09）",
+    "准确率定义": "自动匹配且原因码正确 ÷ 分母",
+    "可查原因覆盖率": "可查原因必填字段齐全的差异数 ÷ 差异总数（目标 100%）",
+    "未解释差异": "缺任一必填字段的差异数（目标 0）"
+  },
+  "nodes": [
+    {
+      "code": "N1",
+      "name": "流水归集",
+      "system_ms": 28.300600009970367,
+      "system_text": "28.3 ms",
+      "baseline": "约 120 分钟（人工导出与整理）",
+      "mode": "系统自动"
+    },
+    {
+      "code": "N2",
+      "name": "渠道账单匹配",
+      "system_ms": 5.9587000869214535,
+      "system_text": "6.0 ms",
+      "baseline": "约 150 分钟（逐笔比对）",
+      "mode": "系统自动"
+    },
+    {
+      "code": "N3",
+      "name": "差异定位",
+      "system_ms": 0.40549994446337223,
+      "system_text": "0.4 ms",
+      "baseline": "约 90 分钟（翻流水与渠道回单）",
+      "mode": "系统自动"
+    },
+    {
+      "code": "N4",
+      "name": "工单确认",
+      "system_ms": null,
+      "system_text": "人工环节",
+      "baseline": "约 45 分钟（分派与等待接手）",
+      "mode": "人工（保留）"
+    },
+    {
+      "code": "N5",
+      "name": "人工调整",
+      "system_ms": null,
+      "system_text": "人工环节",
+      "baseline": "约 60 分钟（人工调整，双人复核）",
+      "mode": "人工（保留）"
+    },
+    {
+      "code": "N6",
+      "name": "复核",
+      "system_ms": null,
+      "system_text": "人工环节",
+      "baseline": "约 15 分钟",
+      "mode": "人工（保留）"
+    }
+  ],
+  "audit_check": {
+    "ok": true,
+    "broken_at": null,
+    "checked": 168
+  }
+}
